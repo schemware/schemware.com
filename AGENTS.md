@@ -9,7 +9,7 @@ Static HTML and CSS for Schemware, LLC, served by GitHub Pages from `main` at ht
 - `index.html`: home page (hero, Sheepshead product card, About, contact).
 - `sheepshead/index.html`: Five-Handed Sheepshead coming-soon page, at `/sheepshead/`.
 - `styles.css`: shared styles. Colours follow the Sheepshead iOS app palette in `../../ios/sheepshead_ios/Sheepshead/Sheepshead/Assets.xcassets/Palette`; keep them in step with the app rather than inventing new ones.
-- `images/`: the app icon at web sizes, favicon and Apple touch icon, resized from the iOS `AppIcon.appiconset/icon-1024.png`.
+- `images/`: the app icon at web sizes, favicon and Apple touch icon, resized from the iOS `AppIcon.appiconset/icon-1024.png`, and `app-store-badge.svg`: Apple's official badge from https://developer.apple.com/app-store/marketing/guidelines/, served locally and never altered. Don't hotlink Apple badges: the old `tools.applemarketingtools.com` host no longer resolves.
 - `CNAME`: the custom domain. The owner sometimes edits it in the GitHub web UI, so fetch before committing.
 
 Contact address on the site: `joe@schemware.com`. Schemware is a one-person studio in Hudson, Wisconsin.
