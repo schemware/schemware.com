@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sheepshead Support — Schemware</title>
+  <meta name="description" content="Help with Sheepshead for iPhone, iPad and the web: signing in, devices, deleting your account and reporting a problem. Contact joe@schemware.com.">
+  <meta name="theme-color" content="#105236">
+  <link rel="icon" type="image/png" href="/images/favicon.png">
+  <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+  <link rel="stylesheet" href="/styles.css">
+  <style>
+    .page-hero { padding: 120px 0 56px; }
+    .page-hero h1 { font-size: clamp(2.2rem, 5vw, 3.4rem); }
+    .page-hero .lead { margin-top: 0.9rem; }
+
+    .support { display: grid; grid-template-columns: 1fr 22rem; gap: 32px; align-items: start; }
+    .faq { display: grid; gap: 12px; }
+    .faq details { padding: 0; overflow: hidden; }
+    .faq summary {
+      list-style: none;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      padding: 20px 24px;
+      font-family: var(--font-display);
+      font-size: 1.15rem;
+      font-weight: 600;
+    }
+    .faq summary::-webkit-details-marker { display: none; }
+    .faq summary::after { content: "+"; font-family: var(--font-body); font-size: 1.5rem; font-weight: 400; color: var(--brand); transition: transform 0.2s ease; }
+    .faq details[open] summary::after { transform: rotate(45deg); }
+    .faq .answer { padding: 0 24px 20px; color: var(--ink-soft); }
+    .faq .answer p { margin: 0 0 0.75rem; }
+    .faq .answer p:last-child { margin-bottom: 0; }
+    .path { font-weight: 600; color: var(--ink); white-space: nowrap; }
+
+    .contact-card { padding: 28px; position: sticky; top: 24px; }
+    .contact-card h2 { font-size: 1.5rem; }
+    .contact-card p { margin: 0.6rem 0 0; color: var(--ink-soft); font-size: 1rem; }
+    .contact-card .button { margin-top: 1.25rem; width: 100%; justify-content: center; }
+    .contact-card ul { margin: 0.75rem 0 0; padding-left: 1.2rem; color: var(--ink-soft); font-size: 0.9375rem; }
+    .contact-card li { margin-bottom: 0.25rem; }
+
+    @media (max-width: 860px) {
+      .support { grid-template-columns: 1fr; }
+      .contact-card { position: static; order: -1; }
+    }
+    @media (max-width: 560px) {
+      .page-hero { padding: 104px 0 44px; }
+      .faq summary { padding: 18px 20px; font-size: 1.05rem; }
+      .faq .answer { padding: 0 20px 18px; }
+      .path { white-space: normal; }
+    }
+  </style>
+</head>
+<body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="mark" viewBox="0 0 1024 1024">
+      <rect width="1024" height="1024" rx="230" fill="#184c3f"/>
+      <rect x="8" y="8" width="1008" height="1008" rx="222" fill="none" stroke="#fff" stroke-opacity=".18" stroke-width="16"/>
+      <circle cx="512" cy="445" r="112" fill="#111516"/>
+      <circle cx="375" cy="548" r="100" fill="#111516"/>
+      <circle cx="649" cy="548" r="100" fill="#111516"/>
+      <path d="M488 556C485 640 470 690 427 729H597C554 690 539 640 536 556Z" fill="#111516"/>
+      <path d="M357 245 437 299 512 198 587 299 667 245 642 344H382Z" fill="#dab76d"/>
+      <rect x="382" y="357" width="260" height="23" rx="11.5" fill="#dab76d"/>
+    </symbol>
+  </svg>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="/" aria-label="Schemware home">
+        <svg class="mark" aria-hidden="true"><use href="#mark"/></svg>
+        Schemware
+      </a>
+      <nav class="site-nav" aria-label="Main">
+        <a href="/sheepshead/">Sheepshead</a>
+        <a href="/support/" aria-current="page">Support</a>
+        <a href="/#about">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="felt page-hero">
+      <div class="wrap">
+        <p class="eyebrow">Sheepshead</p>
+        <h1>Support</h1>
+        <p class="lead">Help with Sheepshead on iPhone, iPad and the web. If your question isn't answered here, email us and a real person will reply.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap support">
+        <div class="faq">
+          <details class="panel" open>
+            <summary>I didn't get the confirmation or sign-in email</summary>
+            <div class="answer">
+              <p>Emails come from <strong>noreply@mail.schemware.com</strong>. Check your spam or junk folder, and make sure the address on your account is spelled correctly.</p>
+              <p>You can ask for a new one from the Sign in screen: choose <span class="path">Email me a sign-in link</span> or <span class="path">Forgot your password?</span></p>
+            </div>
+          </details>
+
+          <details class="panel">
+            <summary>I forgot my password</summary>
+            <div class="answer">
+              <p>On the Sign in screen, choose <span class="path">Forgot your password?</span> and enter your email. We'll send a link to set a new one. If you'd rather not set a password now, <span class="path">Email me a sign-in link</span> signs you straight in.</p>
+            </div>
+          </details>
+
+          <details class="panel">
+            <summary>I lost a device, or want to sign out everywhere</summary>
+            <div class="answer">
+              <p>Go to <span class="path">Settings → Signed-in devices</span>. You'll see each device signed in to your account, and can sign out one of them or choose <span class="path">Sign out all other devices</span>.</p>
+            </div>
+          </details>
+
+          <details class="panel">
+            <summary>How do I change my name or portrait?</summary>
+            <div class="answer">
+              <p>Go to <span class="path">Settings → Name and portrait</span>. Your name is what other players see at the table, in replays and on the leaderboards.</p>
+            </div>
+          </details>
+
+          <details class="panel">
+            <summary>Someone played unfairly, or a bot made a bad play</summary>
+            <div class="answer">
+              <p>Open the hand's replay and choose <span class="path">Report this play</span>. Pick a reason and add a note if you like. Reports help us improve the bots and keep the tables fair.</p>
+            </div>
+          </details>
+
+          <details class="panel">
+            <summary>How do I delete my account?</summary>
+            <div class="answer">
+              <p>In the app, go to <span class="path">Settings → Signed-in devices → Delete account</span> and enter your password.</p>
+              <p>Your email, password, portrait and sign-ins are removed straight away. Your name on past games is replaced with an anonymous one, so the other players' scores and records stay correct.</p>
+              <p>If you can't sign in to delete your account, email <a href="mailto:joe@schemware.com?subject=Delete%20my%20Sheepshead%20account">joe@schemware.com</a> from the address on the account.</p>
+            </div>
+          </details>
+
+          <details class="panel">
+            <summary>When is Sheepshead coming out?</summary>
+            <div class="answer">
+              <p>Sheepshead is coming soon to the App Store for iPhone and iPad. See the <a href="/sheepshead/">Sheepshead page</a>, or <a href="mailto:joe@schemware.com?subject=Tell%20me%20when%20Sheepshead%20launches">email us</a> to hear when it launches.</p>
+            </div>
+          </details>
+        </div>
+
+        <aside class="panel contact-card">
+          <h2>Contact support</h2>
+          <p>Email is the fastest way to reach us. It helps to include:</p>
+          <ul>
+            <li>your device (for example iPhone or iPad) and its iOS version</li>
+            <li>what you were doing when it happened</li>
+            <li>a screenshot, if you have one</li>
+          </ul>
+          <a class="button button-brand" href="mailto:joe@schemware.com?subject=Sheepshead%20support">joe@schemware.com</a>
+          <p>Schemware, LLC · Hudson, Wisconsin</p>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <a class="brand" href="/"><svg class="mark" aria-hidden="true"><use href="#mark"/></svg>Schemware, LLC</a>
+      <span>© 2026 Schemware, LLC · Hudson, Wisconsin · <a href="/sheepshead/">Sheepshead</a> · <a href="/support/">Support</a></span>
+    </div>
+  </footer>
+</body>
+</html>

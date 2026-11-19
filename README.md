@@ -4,6 +4,7 @@ The one-page website of Schemware, LLC, served by GitHub Pages at https://schemw
 
 - `index.html`: the home page.
 - `sheepshead/index.html`: the Five-Handed Sheepshead coming-soon page (`/sheepshead/`).
+- `support/index.html`: Sheepshead support page (`/support/`), the App Store Connect support URL. Its steps name the iOS app's screens (Settings → Signed-in devices, Name and portrait, Report this play and so on); check them against the app when its screens change.
 - `styles.css`: shared styles; colours follow the Sheepshead iOS palette (`Assets.xcassets/Palette`).
 - `AGENTS.md` / `CLAUDE.md`: identical instructions for coding agents, including the commit-to-`main` process.
 - `images/`: the Sheepshead app icon at web sizes, plus the favicon, Apple touch icon and Apple's official App Store badge (`app-store-badge.svg`, unaltered, from developer.apple.com).
