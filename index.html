@@ -4,42 +4,164 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Schemware, LLC</title>
-  <meta name="description" content="Schemware, LLC makes Sheepshead, the five-handed card game, for iPhone, iPad and the web.">
-  <style>
-    :root {
-      color-scheme: light dark;
-      --bg: #f7f5ef;
-      --text: #1c2420;
-      --muted: #4d5a53;
-      --accent: #1f5c3f;
-    }
-    @media (prefers-color-scheme: dark) {
-      :root { --bg: #121815; --text: #eef1ec; --muted: #b3bdb6; --accent: #d9b45a; }
-    }
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      min-height: 100vh;
-      display: grid;
-      place-items: center;
-      padding: 32px 16px;
-      background: var(--bg);
-      color: var(--text);
-      font: 1.0625rem/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    }
-    main { max-width: 34rem; }
-    h1 { margin: 0 0 0.5rem; font-size: 2rem; line-height: 1.2; }
-    p { margin: 0 0 1rem; }
-    a { color: var(--accent); }
-    footer { margin-top: 2.5rem; color: var(--muted); font-size: 0.875rem; }
-  </style>
+  <meta name="description" content="Schemware, LLC, a one-person studio in Hudson, Wisconsin, makes Sheepshead, the five-handed card game, for iPhone, iPad and the web.">
+  <meta name="theme-color" content="#105236">
+  <link rel="icon" type="image/png" href="/images/favicon.png">
+  <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+  <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="mark" viewBox="0 0 1024 1024">
+      <rect width="1024" height="1024" rx="230" fill="#184c3f"/>
+      <rect x="8" y="8" width="1008" height="1008" rx="222" fill="none" stroke="#fff" stroke-opacity=".18" stroke-width="16"/>
+      <circle cx="512" cy="445" r="112" fill="#111516"/>
+      <circle cx="375" cy="548" r="100" fill="#111516"/>
+      <circle cx="649" cy="548" r="100" fill="#111516"/>
+      <path d="M488 556C485 640 470 690 427 729H597C554 690 539 640 536 556Z" fill="#111516"/>
+      <path d="M357 245 437 299 512 198 587 299 667 245 642 344H382Z" fill="#dab76d"/>
+      <rect x="382" y="357" width="260" height="23" rx="11.5" fill="#dab76d"/>
+    </symbol>
+    <symbol id="crown" viewBox="357 198 310 182">
+      <path d="M357 245 437 299 512 198 587 299 667 245 642 344H382Z" fill="currentColor"/>
+      <rect x="382" y="357" width="260" height="23" rx="11.5" fill="currentColor"/>
+    </symbol>
+  </svg>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="/" aria-label="Schemware home">
+        <svg class="mark" aria-hidden="true"><use href="#mark"/></svg>
+        Schemware
+      </a>
+      <nav class="site-nav" aria-label="Main">
+        <a href="/sheepshead/">Sheepshead</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
   <main>
-    <h1>Schemware, LLC</h1>
-    <p>Schemware makes <strong>Sheepshead</strong>, the five-handed card game, to play online with friends and bots on iPhone, iPad and the web.</p>
-    <p>Contact: <a href="mailto:hello@schemware.com">hello@schemware.com</a></p>
-    <footer>© 2026 Schemware, LLC</footer>
+    <section class="felt hero">
+      <div class="wrap">
+        <div>
+          <p class="eyebrow">Schemware, LLC</p>
+          <h1>The card table, <em>wherever</em> your five players are.</h1>
+          <p class="lead">Schemware makes <strong>Sheepshead</strong>, the five-handed card game, to play online with friends and bots on iPhone, iPad and the web.</p>
+          <div class="actions">
+            <a class="button button-gold" href="/sheepshead/">Meet Sheepshead <span aria-hidden="true">→</span></a>
+            <a class="button button-ghost" href="#contact">Get in touch</a>
+          </div>
+        </div>
+
+        <div class="fan" aria-hidden="true">
+          <div class="card diamonds" style="--r:-24deg;--y:14px">
+            <span class="corner tl">Q<small class="suit">♦&#xFE0E;</small></span>
+            <span class="pip"><span class="face"><svg class="crown"><use href="#crown"/></svg><span class="suit">♦&#xFE0E;</span></span></span>
+            <span class="corner br">Q<small class="suit">♦&#xFE0E;</small></span>
+          </div>
+          <div class="card hearts" style="--r:-8deg;--y:2px">
+            <span class="corner tl">Q<small class="suit">♥&#xFE0E;</small></span>
+            <span class="pip"><span class="face"><svg class="crown"><use href="#crown"/></svg><span class="suit">♥&#xFE0E;</span></span></span>
+            <span class="corner br">Q<small class="suit">♥&#xFE0E;</small></span>
+          </div>
+          <div class="card spades" style="--r:8deg;--y:2px">
+            <span class="corner tl">Q<small class="suit">♠&#xFE0E;</small></span>
+            <span class="pip"><span class="face"><svg class="crown"><use href="#crown"/></svg><span class="suit">♠&#xFE0E;</span></span></span>
+            <span class="corner br">Q<small class="suit">♠&#xFE0E;</small></span>
+          </div>
+          <div class="card clubs" style="--r:24deg;--y:14px">
+            <span class="corner tl">Q<small class="suit">♣&#xFE0E;</small></span>
+            <span class="pip"><span class="face"><svg class="crown"><use href="#crown"/></svg><span class="suit">♣&#xFE0E;</span></span></span>
+            <span class="corner br">Q<small class="suit">♣&#xFE0E;</small></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow">Our game</p>
+          <h2>Sheepshead, made for phones and tablets.</h2>
+          <p>Pick or pass, find your partner, and take the tricks — with the table filled by friends or by bots.</p>
+        </div>
+
+        <a class="panel product" href="/sheepshead/">
+          <img class="app-icon" src="/images/sheepshead-icon.png" width="112" height="112" alt="Sheepshead app icon: a gold crown over a club on green felt">
+          <div>
+            <h3>Five-Handed Sheepshead</h3>
+            <p>The classic five-player trick-taking game, online with friends and bots.</p>
+            <div class="tags">
+              <span class="tag tag-soon">Coming soon</span>
+              <span class="tag">iPhone</span>
+              <span class="tag">iPad</span>
+              <span class="tag">Web</span>
+            </div>
+          </div>
+          <span class="arrow" aria-hidden="true">→</span>
+        </a>
+
+        <div class="grid grid-3" style="margin-top:20px">
+          <div class="panel tile">
+            <span class="glyph" aria-hidden="true">5</span>
+            <h3>Five at the table</h3>
+            <p>Built around the five-handed game, with the picker, the blind and the jack of diamonds partner.</p>
+          </div>
+          <div class="panel tile">
+            <span class="glyph" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><circle cx="17" cy="9" r="2.5"/><path d="M16 14.2a5 5 0 0 1 6 4.8"/></svg></span>
+            <h3>Friends and bots</h3>
+            <p>Sit down with the people you play with, and let bots fill the empty seats.</p>
+          </div>
+          <div class="panel tile">
+            <span class="glyph" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2.5" width="12" height="19" rx="2.5"/><path d="M10.5 18.5h3"/></svg></span>
+            <h3>iPhone, iPad and web</h3>
+            <p>One game across your devices, designed for the screen in your hand.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="wrap suits-rule" aria-hidden="true">
+      <span class="suit c">♣&#xFE0E;</span><span class="suit s">♠&#xFE0E;</span><span class="suit h">♥&#xFE0E;</span><span class="suit d">♦&#xFE0E;</span>
+    </div>
+
+    <section class="section" id="about">
+      <div class="wrap about">
+        <div class="section-head">
+          <p class="eyebrow">About</p>
+          <h2>A one-person studio in Hudson, Wisconsin.</h2>
+          <p>Schemware is a lone developer working from Hudson, on the St. Croix River. Sheepshead is a Wisconsin card-table staple, and Schemware exists to bring it to the phones and tablets people already carry.</p>
+          <p>Every part of the game is designed and built by one person: the rules, the bots, the iPhone and iPad apps and the web version. Bug reports and suggestions go straight to the person who fixes them.</p>
+        </div>
+        <dl class="panel facts">
+          <div><dt>Based in</dt><dd>Hudson, Wisconsin</dd></div>
+          <div><dt>Team</dt><dd>One developer</dd></div>
+          <div><dt>Making</dt><dd>Sheepshead for iPhone, iPad and the web</dd></div>
+          <div><dt>Contact</dt><dd><a href="mailto:joe@schemware.com">joe@schemware.com</a></dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="section" id="contact" style="padding-top:0">
+      <div class="wrap">
+        <div class="panel contact">
+          <div>
+            <h2>Say hello</h2>
+            <p>Questions, feedback or press, write any time.</p>
+          </div>
+          <a class="button button-brand" href="mailto:joe@schemware.com">joe@schemware.com</a>
+        </div>
+      </div>
+    </section>
   </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <a class="brand" href="/"><svg class="mark" aria-hidden="true"><use href="#mark"/></svg>Schemware, LLC</a>
+      <span>© 2026 Schemware, LLC · Hudson, Wisconsin · <a href="/sheepshead/">Sheepshead</a></span>
+    </div>
+  </footer>
 </body>
 </html>
