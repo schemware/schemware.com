@@ -24,6 +24,7 @@ Schemware is a one-person shop, so this repository does not use branches or pull
 3. Keep history linear: rebase unpushed local commits onto `origin/main`; do not create merge commits.
 4. Commit only when the owner asks. Pushing publishes the live site, so push only when the owner asks; a request to commit is not a request to push.
 5. Never force-push `main`.
+6. **Agent settings are never committed:** no AI coding agent's settings or local configuration goes into git: Claude Code's `.claude/` (`settings.json`, `settings.local.json` and everything else in it), nor `.codex/`, `.cursor/` or `.gemini/`. `.gitignore` ignores them; never force-add them (`git add -f`), and if one shows up in `git status` or a diff, leave it out of the commit and tell the owner. Shared instructions for agents belong in `CLAUDE.md` and `AGENTS.md` only.
 
 Commit messages: a short imperative subject line (under about 72 characters), a blank line, then a body explaining what changed and why.
 
